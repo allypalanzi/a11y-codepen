@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Accessibility Matters.</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="images/a11y-lead.jpg" data-background-size="auto 100%" data-background-position="left">
+					<h1 style="margin-left: 40%; text-align: left;">
+						Accessibility is <i>important</i>. Let’s do something about it.
+					</h1>
+				</section>
+
+				<section>
+					<h1>Hi! I’m <i>Ally Palanzi</i>.</h1>
+					<p class="fragment" data-fragment-index="1">Senior Front-End Engineer @ Vox Media</p>
+					<a class="fragment" data-fragment-index="2" href="https://www.twitter.com/mylifeasalllly">@mylifeasalllly</a>
+				</section>
+
+				<section>
+					<h1><i>Accessibility</i> (a11y) refers to the design of  products, devices, services, or environments for people who experience disabilities.</h1>
+				</section>
+
+				<section>
+					<h1>
+						<small>In 2001 the World Health Organization redefined disability as:</small> <i>“a mismatch in interaction between the features of a person’s body and the features of the environment in which they live.”</i>
+					</h1>
+				</section>
+
+				<section>
+					<h1>Our work can <i>create</i> or <i>remove</i> mismatches in interaction.</h1>
+				</section>
+
+				<section>
+					<h1>By designing with disabilities in mind, we create better products for <i>everyone</i>.</h1>
+				</section>
+
+				<section>
+					<div class="left">
+						<h1>Disability affects all of us at some point.</h1>
+						<ul>
+							<li class="fragment" data-fragment-index="1">Permanent</li>
+							<li class="fragment" data-fragment-index="2">Temporary</li>
+							<li class="fragment" data-fragment-index="3">Situational</i>
+						</ul>
+					</div>
+					<div class="right">
+						<img src="images/disabilities.png" alt="How four categories of impairments (touch, see, hear, and speak) apply to users in mild, moderate, and severe instances.">
+						<cite><a href="https://www.microsoft.com/en-us/design/practice#toolkit">Microsoft Design</a></cite>
+					</div>
+				</section>
+
+				<section>
+					<h1>Ok, but why should we <i>care</i>?</h1>
+					<p class="fragment" data-fragment-index="1">a.k.a. what to tell your boss</p>
+				</section>
+
+				<section>
+					<h1>It’s better for business</h1>
+					<ul>
+						<li class="fragment" data-fragment-index="1">Device independence</li>
+						<li class="fragment" data-fragment-index="2">Usability</li>
+						<li class="fragment" data-fragment-index="3">Design for older users</li>
+						<li class="fragment" data-fragment-index="4">SEO</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>Case studies show that accessible websites have better <i>search results</i>, <i>reduced maintenance</i>, and <i>increased audience reach</i>.</h1>
+					<cite><a href="https://www.w3.org/standards/webdesign/accessibility">W3C Accessibility Overview</a></cite>
+				</section>
+
+				<section>
+					<h1>Accessibility supports <i>social inclusion</i>, allowing us to hire more diversely & reach a diverse audience.</h1>
+				</section>
+
+				<section>
+					<h1>Scary legal things!!</h1>
+				</section>
+
+				<section>
+					<h1>USA</h1>
+				</section>
+
+				<section>
+					<h1>Add slide about section 504</h1>
+				</section>
+
+				<section>
+					<h1><i>508 compliance</i> means that all users, regardless of disability status, can access technology. It’s a way to break down barriers and provide new opportunities for all Internet users.</h1>
+				</section>
+
+				<section>
+					<h1>How we’re solving a11y at <i>Vox&nbsp;Media</i>.
+				</section>
+
+				<section>
+					<h1>Our foray into accessibility didn’t really get started until <i>May 2016</i>.</h1>
+				</section>
+
+				<section>
+					<h1>We’ve always had advocates for&nbsp;a11y</h1>
+					<img src="images/slack.png" alt="A slack screenshot showing the channel was made in Feb 2015">
+					<p>An accessibility slack channel was created in early 2015.</p>
+				</section>
+
+				<section>
+					<h1>Lots of talking</h1>
+					<img src="images/minivax1.png" alt="A slack convo talking about planning an accessibility meetup">
+					<img src="images/minivax2.png" alt="A slack convo talking about planning an accessibility meetup">
+				</section>
+
+				<section data-background-image="images/minivaxnotes.png" data-background-size="auto 75%" data-background-position="right">
+					<div class="left">
+						<h1>Two Days</h1>
+						<ul>
+							<li class="fragment" data-fragment-index="1">Brainstorming.</li>
+							<li class="fragment" data-fragment-index="2">Speaker.</li>
+							<li class="fragment" data-fragment-index="3">Documentation.</li>
+							<li class="fragment" data-fragment-index="4">Planning.</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h1>We wrote a lot of docs!</h1>
+					<img src="images/docs.png" alt="screenshot of documentation folder">
+				</section>
+
+				<section>
+					<h1>Our Guiding <i>Principles</i></h1>
+				</section>
+
+				<section>
+					<h1>People want to access our content and use our tools; let’s make it easy for them.</h1>
+				</section>
+
+				<section>
+					<h1>We don’t make assumptions about our users.</h1>
+				</section>
+
+				<section>
+					<h1>This is where the industry is going. Get on board or get left behind.</h1>
+				</section>
+
+				<section>
+					<h1>Accessibility is everyone’s responsibility.</h1>
+				</section>
+
+				<section>
+					<h1>We shared internal guidelines</h1>
+					<img src="images/fieldguide.png" alt="screenshot of our internal documentation site">
+				</section>
+
+				<section>
+					<h1>We ran knowledge shares</h1>
+					<img src="images/storytellingblog.png" alt="screenshot of our Storytelling Studio blogpost">
+				</section>
+
+				<section>
+					<h1>We began to incorporate it into <i>every</i> project</h1>
+					<img src="images/verge.png" alt="screenshot of our Verge contrast tests">
+				</section>
+
+				<section>
+					<h1>Keeping people accountable</h1>
+					<ul>
+						<li class="fragment" data-fragment-index="1">Integrating accessibility into QA process</li>
+						<li class="fragment" data-fragment-index="2">Treating it as any other feature in a project</li>
+						<li class="fragment" data-fragment-index="3">Celebrating wins!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>How can we share them with the world?</h1>
+				</section>
+
+				<section data-background-image="images/vax.png" data-background-size="auto 80%" data-background-position="right">
+					<div class="left">
+						<h1>Vax 2016!</h1>
+						<p>2.5 days figuring out the best way to open source our documentation</p>
+					</div>
+				</section>
+
+				<section>
+					<h1><center><i><a href="http://accessibility.voxmedia.com">accessibility.voxmedia.com</a></i></center></h1>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
