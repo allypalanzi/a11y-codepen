@@ -22,7 +22,7 @@ body {
 
 ::selection {
   color: #fff;
-  background: #b2d4a3;
+  background: #84b86d;
   text-shadow: none; }
 
 .reveal .slides > section,
@@ -84,7 +84,7 @@ body {
 
 .reveal i {
   font-style: normal;
-  color: #6aa84f; }
+  color: #486f36; }
 
 .reveal em {
   font-style: italic; }
@@ -209,20 +209,20 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #6aa84f;
+  color: #486f36;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #95c380;
+  color: #69a24f;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #497437; }
+  background: #273c1d; }
 
 /*********************************************
  * IMAGES
@@ -241,7 +241,7 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #6aa84f;
+  border-color: #486f36;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
@@ -249,31 +249,31 @@ body {
  *********************************************/
 .reveal .controls .navigate-left,
 .reveal .controls .navigate-left.enabled {
-  border-right-color: #6aa84f; }
+  border-right-color: #486f36; }
 
 .reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled {
-  border-left-color: #6aa84f; }
+  border-left-color: #486f36; }
 
 .reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled {
-  border-bottom-color: #6aa84f; }
+  border-bottom-color: #486f36; }
 
 .reveal .controls .navigate-down,
 .reveal .controls .navigate-down.enabled {
-  border-top-color: #6aa84f; }
+  border-top-color: #486f36; }
 
 .reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #95c380; }
+  border-right-color: #69a24f; }
 
 .reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #95c380; }
+  border-left-color: #69a24f; }
 
 .reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #95c380; }
+  border-bottom-color: #69a24f; }
 
 .reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #95c380; }
+  border-top-color: #69a24f; }
 
 /*********************************************
  * PROGRESS BAR
@@ -282,7 +282,7 @@ body {
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #6aa84f;
+  background: #486f36;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
