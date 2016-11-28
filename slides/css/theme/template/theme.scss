@@ -345,3 +345,17 @@ body {
 	}
 
 
+.reveal .credits {
+	font-size: .5em;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	p {
+		float: left;
+		margin: 0 5px 0 0;
+		&:last-of-type {
+			float: right;
+		}
+	}
+}
+

@@ -24,38 +24,65 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-notes="Something important" data-background-image="images/a11y-lead.jpg" data-background-size="auto 100%" data-background-position="left">
+				<section data-background-image="images/a11y-lead.jpg" data-background-size="auto 100%" data-background-position="left">
 					<h1 style="margin-left: 42%; text-align: left;">
 						Accessibility is <i>important</i>. Let’s do something about it.
 					</h1>
+					<aside class="notes">
+						Just as the title says, I’m here to talk to y’all about accessibility, why it’s super important, how we’re dealing with it at Vox Media, and I’m also going to leave you with some tips to start implementing it in your work.
+					</aside>
 				</section>
 
 				<section>
 					<h1>Hi! I’m <i>Ally Palanzi</i>.</h1>
 					<p class="fragment" data-fragment-index="1">Senior Front-End Engineer @ Vox Media</p>
 					<p><a class="fragment" data-fragment-index="2" href="https://www.twitter.com/mylifeasalllly">@mylifeasalllly</a></p>
+					<aside class="notes">
+						My name is Ally Palanzi and I’m a senior front-end engineer working on our content publishing platform at Vox Media.
+						<br><br>
+						How many of you include accessibility in your work flow currently?
+						<br><br>
+						So what is accessibility anyways?
+					</aside>
 				</section>
 
 				<section>
 					<h1><center><a href="http://allypalanzi.com/a11y/slides">allypalanzi.com/a11y/slides</a></center></h1>
+					<aside class="notes">
+						At this URL you can find slides, if you want to follow along. I'll also tweet this!
+					</aside>
 				</section>
 
 				<section>
 					<h1><i>Accessibility</i> (a11y) refers to the design of  products, devices, services, or environments for people who experience disabilities.</h1>
+					<aside class="notes">
+						Read the dang slide
+					</aside>
 				</section>
 
 				<section>
 					<h1>
 						<small>In 2001 the World Health Organization redefined disability as:</small> <i>“a mismatch in interaction between the features of a person’s body and the features of the environment in which they live.”</i>
 					</h1>
+					<aside class="notes">
+						In 2001, the world health organization re-defined disability as a mismatch in interaction between people and their environments.
+					</aside>
 				</section>
 
 				<section>
 					<h1>Our work can <i>create</i> or <i>remove</i> mismatches in interaction.</h1>
+					<aside class="notes">
+						As designers, developers and people who create stuff, we can work to either create or remove these mismatches in interactions.
+					</aside>
 				</section>
 
 				<section>
 					<h1>By designing with disabilities in mind, we create better products for <i>everyone</i>.</h1>
+					<aside class="notes">
+						By making our work accessible, we create better products for everyone.
+						<br><br>
+						It’s important to not think of disability as something that only effects a subset of users. It’s not something you can tell from your analytics, you can’t see who’s using a screen reader on your webpage, and there’s not a great way to test for if folks are only using keyboards to interact with your site.
+					</aside>
 				</section>
 
 				<section>
@@ -71,11 +98,20 @@
 						<img src="images/disabilities.png" alt="How four categories of impairments (touch, see, hear, and speak) apply to users in mild, moderate, and severe instances.">
 						<cite><a href="https://www.microsoft.com/en-us/design/practice#toolkit">Microsoft Design</a></cite>
 					</div>
+
+					<aside class="notes">
+						It’s important to realize that disability can effect anyone at some point in their life, or even all within a day. A user who might be using your website with a mouse one morning could have a child in their arms later that night, and only able to interact with your page via a keyboard.
+						<br><br>
+						Microsoft Design has built out extensive and fascinating guidelines on inclusive design. In it, they include this awesome image that shows different states of disability. It can really be all over the place, and we should plan for that.
+					</aside>
 				</section>
 
 				<section>
 					<h1>Ok, but why should we <i>care</i>?</h1>
 					<p class="fragment" data-fragment-index="1">a.k.a. what to tell your boss</p>
+					<aside class="notes">
+						So, I get it. It can be hard to advocate for accessibility when you don’t have analytics to prove progress or improvements, but you’ve just gotta trust the facts.
+					</aside>
 				</section>
 
 				<section>
@@ -86,19 +122,42 @@
 						<li class="fragment" data-fragment-index="3">Design for older users</li>
 						<li class="fragment" data-fragment-index="4">SEO</li>
 					</ul>
+					<aside class="notes" style="font-size: .9em;">
+						Building accessible products and websites is truly better for business.
+						<br><br>
+						A lot of thinking about accessibility feeds into other best practices such as device independence — your product should work across devices.
+						<br><br>
+						your product should be usable,
+						older users should be able to use your site,
+						<br><br>
+						and a word all important execs and clients  like to hear: SEO. If a screenreader can access your site properly, so can google’s indexing crawler.
+					</aside>
 				</section>
 
 				<section>
 					<h1>Case studies show that accessible websites have better <i>search results</i>, <i>reduced maintenance</i>, and <i>increased audience reach</i>.</h1>
 					<cite><a href="https://www.w3.org/standards/webdesign/accessibility">W3C Accessibility Overview</a></cite>
+					<aside class="notes">
+						Case studies show that accessible websites are just better overall — better search results, less maintenance, and increased audience reach.
+					</aside>
 				</section>
 
 				<section>
 					<h1>Accessibility supports <i>social inclusion</i>, allowing us to hire more diversely & reach a diverse audience.</h1>
+					<aside class="notes">
+						Everyone should want to hire more diversely & reach diverse audiences — accessibility supports social inclusion
+					</aside>
 				</section>
 
 				<section>
 					<h1>Scary legal things!!</h1>
+					<aside class="notes">
+						Also scary legal things! Companies like Netflix and Sweegreen have already experienced lawsuits for having accessibility issues.
+						<br><br>
+						Things like creating internal tools that employees are required to use to get their job done, if inaccessible, might mean that you can’t hire as diversely as you should, or it might mean you’re disadvantaging disabled employees to do their job.
+						<br><br>
+						This is especially important for us at Vox as we create tools for our reporters to publish content on our websites.
+					</aside>
 				</section>
 
 				<section>
@@ -111,6 +170,13 @@
 
 				<section>
 					<h1><i>508 compliance</i> means that all users, regardless of disability status, can access technology. It’s a way to break down barriers and provide new opportunities for all Internet users.</h1>
+					<aside class="notes">
+						Some countries have already passed accessibility laws —
+						<br><br>
+						the US has Section 508 of the Rehabilitation Act that some of you here might be familiar with if you’ve worked with governments or non-profits.
+						<br><br>
+					 	It is a mandate for government agencies, federally funded non-profits, public colleges and schools to pass a certain standard of accessibility.
+					 </aside>
 				</section>
 
 				<section>
@@ -119,22 +185,42 @@
 
 				<section>
 					<h1>How we’re solving a11y at <i>Vox&nbsp;Media</i>.
+					<aside class="notes">
+						So, like I said there’s a lot of reasons to care about accessibility.
+						<br><br>
+						At Vox, we’ve grown a lot over the past few years. We’re building lots and lots of tools daily.
+						<br><br>
+						And it’s not something we’ve officially ever considered, until now.
+					</aside>
 				</section>
 
 				<section>
 					<h1>Our foray into accessibility didn’t really get started until <i>May 2016</i>.</h1>
+					<aside class="notes">
+						We really didn’t get started until just a few months ago, but we’re already seeing big changes across the board.
+					</aside>
 				</section>
 
 				<section>
 					<h1>We’ve always had advocates for&nbsp;a11y</h1>
 					<img src="images/slack.png" alt="A slack screenshot showing the channel was made in Feb 2015">
 					<p>An accessibility slack channel was created in early 2015.</p>
+					<aside class="notes">
+						We’ve always had advocates for Accessibility. In early 2015, one of my coworkers created this slack channel where those of us who were interested would drop links and share knowledge. It took a while for us to get much past that.
+					</aside>
 				</section>
 
 				<section>
 					<h1>Lots of talking</h1>
 					<img src="images/minivax1.png" alt="A slack convo talking about planning an accessibility meetup">
 					<img src="images/minivax2.png" alt="A slack convo talking about planning an accessibility meetup">
+					<aside class="notes">
+						We talked alot, trying to figure out just how we could really start including accessibility in our workflow.
+						<br><br>
+						At Vox Media, we have a yearly hackathon that we call Vax where we can work on pretty much whatever we want.
+						<br><br>
+						EXPLAIN MINI VAX
+				</aside>
 				</section>
 
 				<section data-background-image="images/minivaxnotes.png" data-background-size="auto 75%" data-background-position="right">
@@ -147,15 +233,34 @@
 							<li class="fragment" data-fragment-index="4">Planning.</li>
 						</ul>
 					</div>
+					<aside class="notes">
+						Realistically, we couldn’t take too much time away from our day to days to get this done.
+						<br><br>
+						So we had two days.
+						<br><br>
+						We decided we wanted to have some sort of training or at least hear from other companies who have implemented accessibility practices.
+						<br><br>
+						So we reached out to Viget!! And Jeremy Fields came up to our offfice for an afternoon to talk about all things accessibilty.
+						<br><br>
+						After digesting all of what we learned, we spent the entire second day writing documentation.
+					</aside>
 				</section>
 
 				<section>
 					<h1>We wrote a lot of docs!</h1>
 					<img src="images/docs.png" alt="screenshot of documentation folder">
+					<aside class="notes">
+						A lot of documentation.
+						<br><br>
+						We decided to break our docs into role specific guidelines that way it would be simpler to spread it across our team with specific todos depending on the role.
+					</aside>
 				</section>
 
 				<section>
 					<h1>Our Guiding <i>Principles</i></h1>
+					<asie class="notes">
+						We came up with some guiding principles to consider when thinking about accessibility:
+					</asie>
 				</section>
 
 				<section>
@@ -164,6 +269,9 @@
 
 				<section>
 					<h1>We don’t make assumptions about our users.</h1>
+					<aside class="notes">
+						As I mentioned before it’s really difficult to tell what disabilities may be affecting your users.
+					</aside>
 				</section>
 
 				<section>
@@ -172,16 +280,27 @@
 
 				<section>
 					<h1>Accessibility is everyone’s responsibility.</h1>
+					<aside class="notes">
+						We didn’t want to be known as the “accessibility police” so we wanted to ensure that while reading these documents, everyone understood the importance.
+					</aside>
 				</section>
 
 				<section>
 					<h1>We shared internal guidelines</h1>
 					<img src="images/fieldguide.png" alt="screenshot of our internal documentation site">
+					<aside class="notes">
+						This turned out to be super successful! We spread them around to our teams and people read them and loved them.
+						<br><br>
+						We wrote articles on our editorial’s internal documentation website
+					</aside>
 				</section>
 
 				<section>
 					<h1>We ran knowledge shares</h1>
 					<img src="images/storytellingblog.png" alt="screenshot of our Storytelling Studio blogpost">
+					<aside class="notes">
+						We began giving presentations to any team tha would let us
+					</aside>
 				</section>
 
 				<section>
@@ -196,10 +315,18 @@
 						<li class="fragment" data-fragment-index="2">Treating it as any other feature in a project</li>
 						<li class="fragment" data-fragment-index="3">Celebrating wins!</li>
 					</ul>
+					<aside class="notes">
+						And we started some practices to keep people accountable like including a11y into our QAing process, treating it just as any other feature in a project and trying to celebrate wins where we could.
+					</aside>
 				</section>
 
 				<section>
 					<h1>How can we share them with the world?</h1>
+					<aside class="notes">
+						When we first wrote all of these docs, we had talked about open sourcing them however it was out of scope for the two day hackathon. Because of our successes with sharing it within the company, we really wanted to figure out how to share it with the world.
+						<br><br>
+						Lucky for us, it was nearing our yearly hackathon in July, Vax.
+					</aside>
 				</section>
 
 				<section data-background-image="images/vax.png" data-background-size="auto 80%" data-background-position="right">
@@ -207,19 +334,39 @@
 						<h1>Vax 2016!</h1>
 						<p>2.5 days figuring out the best way to open source our documentation</p>
 					</div>
+					<aside class="notes">
+						We spent two days in Chicago fleshing out our guidelines and figuring out what kind of way we wanted to share it. We considered just releasing documentation as is on a small stie but started brainstorming how we truly used these documents.
+					</aside>
 				</section>
 
 				<section>
 					<h1><center><i><a href="http://accessibility.voxmedia.com">accessibility.voxmedia.com</a></i></center></h1>
+					<aside class="notes">
+						Our docs had been working out well for us, and we wanted to share them. Better yet -- we wanted people to contribute to them
+					</aside>
 				</section>
 
 				<section>
 					<img src="images/a11y.gif" alt="gif of user using accessibility.voxmedia.com">
+					<aside class="notes">
+						One of my teammates, a designer, Sanette, had started including an accessibility check list when working on projects.
+						<br><br>
+						Because of how she was using these docs, we thought that a checklist builder might be useful for everyone.
+						<br><br>
+						So after two days — we launched acccessibility.voxmedia.com
+						<br><br>
+						We have the site divided into the same sections we created documentation for — designers, engineers, projects managers, qa, and editorial, and it allows you to select the items relevant to your projects and outputs a list for you to copy out at the end. It also includes tons of links to resources and tools.
+						<br><br>
+						We got a lot of love for it on the internet! And even a few open source contributions. This was exciting for us!!
+					</aside>
 				</section>
 
 				<section>
 					<h1><i>Accessibility</i> best practices* for designers &amp; developers</h1>
 					<p>*Not all, but some good ones.</p>
+					<aside class="notes">
+						Okay, so enough of that. I’m going to teach you something you can start using immediately.
+					</aside>
 				</section>
 
 				<section>
@@ -354,6 +501,10 @@
 
 				<section>
 					<h1>Write good alt text for your images, hide decorative images</h1>
+					<pre><code class="html" data-trim data-escape>
+<img src="catomg.jpg" alt="cute fluffy cat">
+<img src="border.png" aria-hidden="true">
+					</code></pre>
 
 				</section>
 
@@ -465,8 +616,15 @@
 					<h1>Thank <i>you</i>!</h1>
 					<p><a href="https://www.twitter.com/mylifeasalllly">@mylifeasalllly</a></p>
 				</section>
+
+				<div class="credits">
+					<p>#cssconfau16</p>
+					<p><a href="https://www.twitter.com/mylifeasalllly">@mylifeasalllly</a></p>
+				</div>
 			</div>
 		</div>
+
+
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
