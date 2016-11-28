@@ -130,7 +130,7 @@
 						your product should be usable,
 						older users should be able to use your site,
 						<br><br>
-						and a word all important execs and clients  like to hear: SEO. If a screenreader can access your site properly, so can google’s indexing crawler.
+						and a word all important execs and clients  like to hear: SEO. If a screen reader can access your site properly, so can google’s indexing crawler.
 					</aside>
 				</section>
 
@@ -161,15 +161,17 @@
 				</section>
 
 				<section>
-					<h1>USA</h1>
+					<h1>Many countries are recognizing and acting upon the need to ensure access to the web for people with disabilities.</h1>
+					<cite><a href="http://webaim.org/articles/laws/world/">Web Aim</a>
 				</section>
 
 				<section>
-					<h1>Add slide about section 504</h1>
+					<h1>A common approach throughout the world is for nations to adopt the <i>Web Content Accessibility Guidelines</i>.</h1>
 				</section>
 
 				<section>
-					<h1><i>508 compliance</i> means that all users, regardless of disability status, can access technology. It’s a way to break down barriers and provide new opportunities for all Internet users.</h1>
+					<h1>USA 🇺🇸</h1>
+					<h3><i>508 compliance</i> means that all users, regardless of disability status, can access technology. It’s a way to break down barriers and provide new opportunities for all Internet users.</h3>
 					<aside class="notes">
 						Some countries have already passed accessibility laws —
 						<br><br>
@@ -180,7 +182,16 @@
 				</section>
 
 				<section>
-					<h1>Add slide about global a11y</h1>
+					<h1>Australia 🇦🇺</h1>
+				</section>
+
+				<section>
+					<h1>Europe 🇪🇺</h1>
+				</section>
+
+				<section>
+					<h1>...and more!</h1>
+					<cite><a href="http://webaim.org/articles/laws/world/">WebAIM World Laws</a>
 				</section>
 
 				<section>
@@ -202,7 +213,7 @@
 				</section>
 
 				<section>
-					<h1>We’ve always had advocates for&nbsp;a11y</h1>
+					<h1>We’ve always had advocates for&nbsp;a11y.</h1>
 					<img src="images/slack.png" alt="A slack screenshot showing the channel was made in Feb 2015">
 					<p>An accessibility slack channel was created in early 2015.</p>
 					<aside class="notes">
@@ -211,11 +222,11 @@
 				</section>
 
 				<section>
-					<h1>Lots of talking</h1>
+					<h1>Lots of talking.</h1>
 					<img src="images/minivax1.png" alt="A slack convo talking about planning an accessibility meetup">
 					<img src="images/minivax2.png" alt="A slack convo talking about planning an accessibility meetup">
 					<aside class="notes">
-						We talked alot, trying to figure out just how we could really start including accessibility in our workflow.
+						We talked a lot, trying to figure out just how we could really start including accessibility in our work-flow.
 						<br><br>
 						At Vox Media, we have a yearly hackathon that we call Vax where we can work on pretty much whatever we want.
 						<br><br>
@@ -227,10 +238,10 @@
 					<div class="left">
 						<h1>Two Days</h1>
 						<ul>
-							<li class="fragment" data-fragment-index="1">Brainstorming.</li>
-							<li class="fragment" data-fragment-index="2">Speaker.</li>
-							<li class="fragment" data-fragment-index="3">Documentation.</li>
-							<li class="fragment" data-fragment-index="4">Planning.</li>
+							<li class="fragment" data-fragment-index="1">Brainstorming</li>
+							<li class="fragment" data-fragment-index="2">Speaker</li>
+							<li class="fragment" data-fragment-index="3">Documentation</li>
+							<li class="fragment" data-fragment-index="4">Planning</li>
 						</ul>
 					</div>
 					<aside class="notes">
@@ -240,7 +251,7 @@
 						<br><br>
 						We decided we wanted to have some sort of training or at least hear from other companies who have implemented accessibility practices.
 						<br><br>
-						So we reached out to Viget!! And Jeremy Fields came up to our offfice for an afternoon to talk about all things accessibilty.
+						So we reached out to Viget!! And Jeremy Fields came up to our offfice for an afternoon to talk about all things accessibility.
 						<br><br>
 						After digesting all of what we learned, we spent the entire second day writing documentation.
 					</aside>
@@ -291,7 +302,7 @@
 					<aside class="notes">
 						This turned out to be super successful! We spread them around to our teams and people read them and loved them.
 						<br><br>
-						We wrote articles on our editorial’s internal documentation website
+						We wrote articles on our editorials internal documentation website
 					</aside>
 				</section>
 
@@ -379,14 +390,14 @@
 				<section>
 					<h1>Don't indicate important information using color alone</h1>
 					<center>
-						<img src="images/link.png" alt="examples of forms">
+						<img src="images/link.png" alt="examples of links, one with only color, one has an underline">
 					</center>
 				</section>
 
 				<section>
 					<h1>Pair values of colors together (not only hues) to increase contrast</h1>
 					<center>
-						<img src="images/color.png" alt="examples of forms">
+						<img src="images/color.png" alt="examples of colors">
 					</center>
 				</section>
 
@@ -394,18 +405,30 @@
 					<h1>Design accessible forms</h1>
 					<p>Fields should have labels that are always present, error messages should be clear</p>
 					<center>
-						<img src="images/link.png" alt="examples of forms">
+						<img src="images/form.png" alt="examples of forms">
 					</center>
 				</section>
 
 				<section>
 					<h1>Build accessible forms</h1>
-					<div class="left">
 						<ul>
 							<li class="fragment" data-fragment-index="1">Always have labels, don’t rely on placeholder text</li>
 							<li class="fragment" data-fragment-index="2">Labels should not disappear on form focus</li>
 							<li class="fragment" data-fragment-index="3">Use fieldset and legend for larger forms like a checklist</li>
 						</ul>
+						<pre><code class="html" data-trim data-escape>
+&lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
+&lt;input id=&quot;name&quot; type=&quot;text&quot; name=&quot;name&quot;&gt;
+
+&lt;fieldset&gt;
+  &lt;legend&gt;Select your pizza toppings:&lt;/legend&gt;
+
+  &lt;input id=&quot;ham&quot; type=&quot;checkbox&quot; name=&quot;toppings&quot; value=&quot;ham&quot;&gt;
+  &lt;label for=&quot;ham&quot;&gt;Ham&lt;/label&gt;
+  &lt;input id=&quot;pepperoni&quot; type=&quot;checkbox&quot; name=&quot;toppings&quot; value=&quot;pepperoni&quot;&gt;
+  &lt;label for=&quot;pepperoni&quot;&gt;Pepperoni&lt;/label&gt;
+&lt;/fieldset&gt;
+						</code></pre>
 				</section>
 
 				<section>
@@ -467,11 +490,13 @@
 						</ul>
 					</div>
 					<div class="right">
-					<pre><code class="css" data-trim data-escape>
+					<pre class="fragment" data-fragment-index="1"><code class="css" data-trim data-escape>
 *:focus {
  outline: none; //BAD!!!
 }
 					</code></pre>
+					<img class="fragment" data-fragment-index="2" src="images/focus-good.png">
+					<img class="fragment" data-fragment-index="3" src="images/focus-subtle.png">
 					</div>
 				</section>
 
@@ -511,6 +536,13 @@
 				<section>
 					<h1>Accessible Inline SVGs</h1>
 					<p>SVGs are often used as icons on interactive elements in sites. The SVG should have a title or description, then you can use the aria-labelledby attribute to tell the screen reader what element to use to describe the SVG.</p>
+					<pre><code class="html" data-trim data-escape>
+<svg aria-labelledby="title">
+ <title id="title">Green rectangle</title>
+ <rect width="75" height="50" rx="20" ry="20" fill="#90ee90" stroke="#228b22" stroke-fill="1" />
+</svg>
+				</pre></code>
+					<cite><a href="https://www.sitepoint.com/tips-accessible-svg/">Sitepoint Tips for Creating Accessible SVG</a>
 				</section>
 
 				<section>
