@@ -210,7 +210,8 @@ body {
  *********************************************/
 .reveal a {
   color: #486f36;
-  text-decoration: none;
+  text-decoration: underline;
+  font-weight: bold;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
